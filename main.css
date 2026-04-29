@@ -1,10 +1,11 @@
 html {
     font-family: 'Times New Roman', Times, serif;
     font-size: 1.2rem;
+    color: white;
 }
 
 body {
-    background-color: rgb(219, 219, 219);
+    background-color: rgb(0, 0, 0);
     display: grid;
     grid-template-columns: 1fr;
 }
@@ -32,5 +33,3 @@ button {
     background-color: aliceblue;
     border-radius: 0.3em;
 }
-
-/* TODO: Set up buttons, input fields and checkboxes -> API */
