@@ -1,0 +1,36 @@
+html {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.2rem;
+}
+
+body {
+    background-color: rgb(219, 219, 219);
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+header {
+    margin: 1em 1em 1em 1em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+section {
+    border: 2px outset black;
+    padding: 1em;
+    margin: 1em 2em 1em 2em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+button {
+    margin: 1em 1em 0em 1em;
+    background-color: aliceblue;
+    border-radius: 0.3em;
+}
+
+/* TODO: Set up buttons, input fields and checkboxes -> API */
