@@ -28,7 +28,6 @@ button {
     border-radius: 0.3em;
 }
 
-
 a {
     color: black;
     text-decoration: none;
@@ -66,27 +65,6 @@ a {
     margin-left: auto;
 }
 
-.sidebar {
-    display: none;
-}
-
-.burger {
-    margin-left: auto;
-    display: flex;
-    flex-direction: column;
-    gap: 5px;
-    background: none;
-    border: none;
-    padding: 1em;
-}
-
-.burger span {
-    width: 25px;
-    height: 2px;
-    background: black;
-    display: block;
-}
-
 .site_footer {
     display: flex;
     align-items: center;
@@ -99,10 +77,6 @@ a {
 }
 
 @media (min-width: 768px) {
-    .burger {
-        display: none;
-    }
-
     .site_header nav {
         display: block;
     }
@@ -111,25 +85,6 @@ a {
         display: flex;
         gap: 1em;
         list-style: none;
-    }
-
-    .sidebar {
-        display: flex;
-        border: 2px outset black;
-        justify-content: space-between;
-        align-items: center;
-        margin: 1em 0em 1em 0em;
-    }
-
-    .sidebar .widget {
-        align-self: stretch;
-        justify-self: stretch;
-        padding: 1em;
-    }
-
-    .widget img {
-        width: 100%;
-        height: auto;
     }
 
     .site_footer {
@@ -168,40 +123,7 @@ a {
         grid-column: 1;
     }
 
-    /* article .bordered {
-    display: flex;
-  } */
-
-    /* aside {
-    grid-column: 2;
-  } */
-
-
-
     .bordered {
         margin: 1em 1em 1em 0em;
     }
-
-    .sidebar {
-        grid-column: 2;
-        grid-row: 1 / 5;
-        display: flex;
-        flex-direction: column;
-    }
-
-    .widget {
-        align-self: stretch;
-        justify-self: stretch;
-    }
-
-    .widget h3 {
-        margin: 0px;
-    }
-
-    .widget img {
-        width: 100%;
-        height: auto;
-    }
 }
-
-/* TODO: Set up buttons, input fields and checkboxes -> API */
