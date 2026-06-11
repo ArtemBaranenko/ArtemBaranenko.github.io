@@ -5,16 +5,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
-    <link rel="stylesheet" href="../assets/css/about.css">
+    <link rel="stylesheet" href="../assets/css/site.css">
 </head>
 
-<body>
-    <header class="site_header">
-        <img class="logo" src="../assets/img/fi.png" alt="Logo" width="60" height="60">
-        <h1>About Me</h1>
-
-        <nav aria-label="Primary">
-            <ul>
+<body class="min-h-screen flex flex-col">
+    <header class="sticky top-0 w-full flex flex-col justify-between p-6 md:flex-row gap-2 bg-black text-gray-200">
+        <a class="flex items-center mb-4 title-font md:mb-0 gap-2">
+            <img src="../assets/img/fi.png" alt="SCC Logo" class="h-6">
+            <h1 class="text-sm">About</h1>
+        </a>
+        <nav aria-label="Primary" class="flex text-base md:ml-auto">
+            <ul class="flex gap-4">
                 <li><a href="../index.html">Home</a></li>
                 <li><a href="../contact.html">Contact</a></li>
                 <li><a href="../about.html">About</a></li>
@@ -25,30 +26,62 @@
         </nav>
     </header>
 
-    <main>
-        <article class="bordered">
-            <p>
-                My name is Artem. I am an Information Technology student at North Metropolitan TAFE. I enjoy learning
-                new technologies and improving my skills in programming, web development, databases, and software
-                development. I am a motivated and responsible individual who works well both independently and in a
-                team.
+    <main class="w-full max-w-7xl mx-auto px-12 py-12 gap-20 grow">
+        <h1 class="text-5xl font-bold mb-4">About</h1>
+        <hr class="w-20 border-2 border-black mb-10">
+        <article class="max-w-7xl mx-auto px-4 py-16 sm:px-6 sm:py-24 lg:px-8 lg:py-32 text-left">
+            <p class="mt-4 text-base text-pretty text-gray-700 sm:text-lg/relaxed">
+                My name is Artem, and I am an Information Technology student at North Metropolitan TAFE. I have a strong
+                interest in software development, web technologies, and problem-solving through programming. Throughout
+                my studies, I have gained experience working with HTML, CSS, JavaScript, Python, C#, SQL, and modern
+                development tools.
+            </p>
+            <p class="mt-4 text-base text-pretty text-gray-700 sm:text-lg/relaxed">
+                I enjoy creating practical applications and websites that combine functionality with clean and
+                user-friendly design. During my projects, I have worked with databases, APIs, version control systems,
+                and responsive web development principles. I am constantly looking for opportunities to improve my
+                technical skills and learn new technologies that can help me become a more effective developer.
+            </p>
+            <p class="mt-4 text-base text-pretty text-gray-700 sm:text-lg/relaxed">
+                In addition to my studies, I enjoy working on personal projects that allow me to apply what I have
+                learned in real-world scenarios. These projects help me strengthen my understanding of software
+                architecture, user experience, and application development. I value attention to detail, continuous
+                learning, and writing maintainable code.
+            </p>
+            <p class="mt-4 text-base text-pretty text-gray-700 sm:text-lg/relaxed">
+                My goal is to build a successful career in the IT industry, where I can contribute to meaningful
+                projects, continue developing my skills, and work alongside experienced professionals. I am motivated,
+                reliable, and enjoy both independent work and collaboration within a team environment.
             </p>
         </article>
     </main>
 
-    <footer class="site_footer">
-        <p>&copy; Copyright 2026, Artem Baranenko &amp; Adrian Gould</p>
-
-        <nav aria-labelledby="footer-nav">
-            <ul>
-                <li><a href="../index.html">Home</a></li>
-                <li><a href="../contact.html">Contact</a></li>
-                <li><a href="../about.html">About</a></li>
-                <li><a href="../resume.html">Resume</a></li>
-                <li><a href="../projects.html">Projects</a></li>
-                <li><a href="../mywork.html">Project</a></li>
-            </ul>
-        </nav>
+    <footer
+        class="text-gray-400 bg-black body-font w-full flex flex-col items-start justify-between p-6 md:flex-row gap-2">
+        <a class="flex items-center mb-4 title-font  gap-2
+                  hover:text-white transition duration-500 ease-in-out">
+            <img src="../assets/img/fi.png" alt="SCC Logo" class="h-8">
+            <h1 class="text-sm">Portfolio</h1>
+        </a>
+        <p class="flex flex-wrap text-sm pl-6 ml-6 text-base
+                border-l border-gray-400 grow m-auto">
+            © Copyright 2026 Artem Baranenko, all rights reserved.
+        </p>
+        <ul class="flex flex-wrap text-sm pl-6 ml-6 text-base border-l border-gray-400
+                md:mr-auto gap-2">
+            <li><a href="../index.html" class="border-b border-gray-400 hover:border-gray-200 hover:text-white
+                  transition duration-500 ease-in-out">Home</a></li>
+            <li><a href="../contact.html" class="border-b border-gray-400 hover:border-gray-200 hover:text-white
+                  transition duration-500 ease-in-out">Contact</a></li>
+            <li><a href="../about.html" class="border-b border-gray-400 hover:border-gray-200 hover:text-white
+                  transition duration-500 ease-in-out">About</a></li>
+            <li><a href="../resume.html" class="border-b border-gray-400 hover:border-gray-200 hover:text-white
+                  transition duration-500 ease-in-out">Resume</a></li>
+            <li><a href="../projects.html" class="border-b border-gray-400 hover:border-gray-200 hover:text-white
+                  transition duration-500 ease-in-out">Projects</a></li>
+            <li><a href="../mywork.html" class="border-b border-gray-400 hover:border-gray-200 hover:text-white
+                  transition duration-500 ease-in-out">Project</a></li>
+        </ul>
     </footer>
 
 </body>

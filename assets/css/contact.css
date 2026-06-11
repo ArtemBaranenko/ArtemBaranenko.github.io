@@ -4,126 +4,44 @@ html {
 }
 
 body {
-    background-color: rgb(219, 219, 219);
-    padding: 10px;
-    margin: 1em 1em 1em 0em;
-    display: grid;
-    grid-template-columns: 1fr;
-    margin: 1em 1em 1em 1em;
+  font-family: Arial, sans-serif;
+  background: #f8f9fa;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
 }
-
-fieldset {
-    border: 2px outset black;
-    padding: 0.5em;
-    margin: 1em 1em 1em 1em;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
 }
-
-button {
-    margin: 1em 1em 0em 1em;
-    background-color: aliceblue;
-    border-radius: 0.3em;
+label {
+  font-weight: bold;
+  display: block;
+  margin-bottom: 5px;
 }
-
-a {
-    color: black;
-    text-decoration: none;
+input,
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
 }
-
-.bordered {
-    border: 2px outset black;
-    padding: 1em;
-    margin: 1em 0em 1em 0em;
+.error {
+  color: red;
+  font-size: 13px;
+  margin-top: 5px;
 }
-
-.site_header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    position: sticky;
-    top: 0;
-    background-color: rgb(219, 219, 219);
+input[type=submit] {
+  width: 100%;
+  padding: 12px;
+  background: #007bff;
+  color: #fff;
+  font-size: 16px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
 }
-
-/* TODO: Fix the header! */
-
-.site_header .logo {
-    align-items: start;
-    margin: 0px 20px 0px 0px;
-}
-
-.site_header h1 {
-    align-items: start;
-    gap: 20px;
-}
-
-.site_header nav {
-    display: none;
-    margin-left: auto;
-}
-
-.site_footer {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-}
-
-.site_footer nav ul {
-    display: flex;
-    gap: 1em;
-}
-
-@media (min-width: 768px) {
-    .site_header nav {
-        display: block;
-    }
-
-    .site_header nav ul {
-        display: flex;
-        gap: 1em;
-        list-style: none;
-    }
-
-    .site_footer {
-        display: flex;
-        justify-content: space-between;
-        flex-direction: row;
-    }
-}
-
-@media (min-width: 1024px) {
-
-    body {
-        grid-template-columns: 1fr 8fr 1fr;
-    }
-
-    .site_header {
-        grid-column: 2;
-    }
-
-    .site_footer {
-        grid-column: 2;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        margin: 1em 1em 0em 0em;
-
-    }
-
-    main {
-        grid-column: 2;
-        display: grid;
-        grid-template-columns: 2fr 1fr;
-    }
-
-    article {
-        grid-column: 1;
-    }
-
-    .bordered {
-        margin: 1em 1em 1em 0em;
-    }
+input[type=submit]:hover {
+  background: #0056b3;
 }

@@ -5,16 +5,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
+    <link rel="stylesheet" href="../assets/css/site.css">
     <link rel="stylesheet" href="../assets/css/contact.css">
 </head>
 
-<body>
-    <header class="site_header">
-        <img class="logo" src="../assets/img/fi.png" alt="Logo" width="60" height="60">
-        <h1>Contact Me</h1>
-
-        <nav aria-label="Primary">
-            <ul>
+<body class="min-h-screen flex flex-col">
+    <header class="sticky top-0 w-full flex flex-col justify-between p-6 md:flex-row gap-2 bg-black text-gray-200">
+        <a class="flex items-center mb-4 title-font md:mb-0 gap-2">
+            <img src="../assets/img/fi.png" alt="SCC Logo" class="h-6">
+            <h1 class="text-sm">Contact Me</h1>
+        </a>
+        <nav aria-label="Primary" class="flex text-base md:ml-auto">
+            <ul class="flex gap-4">
                 <li><a href="../index.html">Home</a></li>
                 <li><a href="../contact.html">Contact</a></li>
                 <li><a href="../about.html">About</a></li>
@@ -25,48 +27,66 @@
         </nav>
     </header>
 
-    <main>
-        <form>
+    <main class="w-full max-w-7xl mx-auto px-12 py-12 gap-20 grow">
+        <h1 class="text-5xl font-bold mb-4">Contact</h1>
+        <hr class="w-20 border-2 border-black mb-10">
 
-            <fieldset>
-                <legend>Contact Information</legend>
+        <form id="contactForm" class="max-w-4xl mx-auto px-8 py-16 grid grid-cols-1 md:grid-cols-2 gap-16">
+            <fieldset class="flex flex-col gap-6 border-0 p-0">
+                <legend class="text-2xl text-gray-900 sm:text-3xl">Fill out the form</legend>
+                <p class="flex flex-col gap-2">
+                    <label for="name" class="font-bold">Name</label>
+                    <input type="text" id="name" class="border-2 border-black rounded p-1 bg-transparent">
+                    <span class="error text-red-600 text-sm" id="nameError"></span>
+                </p>
 
-                <label for="name">Name</label>
-                <input type="text" id="name">
+                <p class="flex flex-col gap-2">
+                    <label for="email" class="font-bold">Email</label>
+                    <input type="text" id="email" class="border-2 border-black rounded p-1 bg-transparent">
+                    <span class="error text-red-600 text-sm" id="emailError"></span>
+                </p>
 
-                <label for="email">Email</label>
-                <input type="email" id="email">
-
+                <p class="flex flex-col gap-2">
+                    <label for="message" class="font-bold">Message</label>
+                    <textarea id="message" rows="6" class="border-2 border-black rounded p-2 bg-transparent"></textarea>
+                    <span class="error text-red-600 text-sm" id="messageError"></span>
+                </p>
+                <button type="submit" class="bg-black text-white font-bold p-2 hover:bg-gray-800 transition">
+                    Send
+                </button>
             </fieldset>
-
-            <fieldset>
-                <legend>Message</legend>
-
-                <label for="message">Your Message</label>
-                <textarea id="message"></textarea>
-
-            </fieldset>
-
-            <button type="submit">Send</button>
-
         </form>
     </main>
 
-    <footer class="site_footer">
-        <p>&copy; Copyright 2026, Artem Baranenko &amp; Adrian Gould</p>
-
-        <nav aria-labelledby="footer-nav">
-            <ul>
-                <li><a href="../index.html">Home</a></li>
-                <li><a href="../contact.html">Contact</a></li>
-                <li><a href="../about.html">About</a></li>
-                <li><a href="../resume.html">Resume</a></li>
-                <li><a href="../projects.html">Projects</a></li>
-                <li><a href="../mywork.html">Project</a></li>
-            </ul>
-        </nav>
+    <footer
+        class="text-gray-400 bg-black body-font w-full flex flex-col items-start justify-between p-6 md:flex-row gap-2">
+        <a class="flex items-center mb-4 title-font  gap-2
+                  hover:text-white transition duration-500 ease-in-out">
+            <img src="../assets/img/fi.png" alt="SCC Logo" class="h-8">
+            <h1 class="text-sm">Portfolio</h1>
+        </a>
+        <p class="flex flex-wrap text-sm pl-6 ml-6 text-base
+                border-l border-gray-400 grow m-auto">
+            © Copyright 2026 Artem Baranenko, all rights reserved.
+        </p>
+        <ul class="flex flex-wrap text-sm pl-6 ml-6 text-base border-l border-gray-400
+                md:mr-auto gap-2">
+            <li><a href="../index.html" class="border-b border-gray-400 hover:border-gray-200 hover:text-white
+                  transition duration-500 ease-in-out">Home</a></li>
+            <li><a href="../contact.html" class="border-b border-gray-400 hover:border-gray-200 hover:text-white
+                  transition duration-500 ease-in-out">Contact</a></li>
+            <li><a href="../about.html" class="border-b border-gray-400 hover:border-gray-200 hover:text-white
+                  transition duration-500 ease-in-out">About</a></li>
+            <li><a href="../resume.html" class="border-b border-gray-400 hover:border-gray-200 hover:text-white
+                  transition duration-500 ease-in-out">Resume</a></li>
+            <li><a href="../projects.html" class="border-b border-gray-400 hover:border-gray-200 hover:text-white
+                  transition duration-500 ease-in-out">Projects</a></li>
+            <li><a href="../mywork.html" class="border-b border-gray-400 hover:border-gray-200 hover:text-white
+                  transition duration-500 ease-in-out">Project</a></li>
+        </ul>
     </footer>
 
+    <script src="../assets/js/contact.js"></script>
 </body>
 
 </html>
