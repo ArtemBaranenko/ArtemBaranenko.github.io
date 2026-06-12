@@ -30,7 +30,7 @@ async function chooseApi(event) {
     event.preventDefault();
     if (checkbox1.checked) {
         if (/[a-zA-Z]/.test(input.value) || input.value.length > 15 || input.value.length < 7) {
-            output.textContent = `Enter correcrt IP format (has to be IPv4)`
+            output.textContent = `Enter correcrt IP format (has to be IPv4)`;
         }
         else {
             const result = await getData(url1);
@@ -42,10 +42,10 @@ async function chooseApi(event) {
 
     }
     else if (checkbox2.checked) {
-        checkbox1.checked = false
+        checkbox1.checked = false;
 
         if (!input.value.includes("@")) {
-            output.textContent = `Enter correcrt email (@ missing)`
+            output.textContent = `Enter correcrt email (@ missing)`;
         }
         else {
             const result = await getData(url2);
