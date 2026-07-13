@@ -16,18 +16,18 @@
         </a>
         <nav aria-label="Primary" class="flex text-base md:ml-auto">
             <ul class="flex gap-4">
-                <li><a href="../index.html">Home</a></li>
-                <li><a href="../contact.html">Contact</a></li>
-                <li><a href="../about.html">About</a></li>
-                <li><a href="../resume.html">Resume</a></li>
-                <li><a href="../projects.html">Projects</a></li>
-                <li><a href="../mywork.html">Project</a></li>
+                <li><a href="#index">Home</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#resume">Resume</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#mywork">Project</a></li>
             </ul>
         </nav>
     </header>
 
     <main class="grow flex items-center justify-center">
-        <section class="text-center">
+        <section id="home" class="text-center">
 
             <h2 class="text-3xl font-bold text-gray-900 sm:text-4xl lg:text-5xl">
                 Hello, I'm Artem Baranenko
@@ -44,7 +44,164 @@
                transition ease-in-out duration-500 mt-4" onclick="window.location.href='../mywork.html'">
                 View my projects
             </button>
+        </section>
 
+        <section id="contact">
+            <h2 class="text-5xl font-bold mb-4">Contact</h2>
+            <hr class="w-20 border-2 border-black mb-10">
+
+            <form id="contactForm" class="max-w-4xl mx-auto px-8 py-16 grid grid-cols-1 md:grid-cols-2 gap-16">
+                <fieldset class="flex flex-col gap-2 border-0 p-0">
+                    <legend class="text-2xl text-gray-900 sm:text-3xl mb-10">Fill out the form</legend>
+                    <p class="flex flex-col gap-2">
+                        <label for="name" class="font-bold">Name</label>
+                        <input type="text" id="name" class="border-2 border-black rounded p-1 bg-transparent">
+                        <span class="error text-red-600 text-sm" id="nameError"></span>
+                    </p>
+
+                    <p class="flex flex-col gap-2">
+                        <label for="email" class="font-bold">Email</label>
+                        <input type="text" id="email" class="border-2 border-black rounded p-1 bg-transparent">
+                        <span class="error text-red-600 text-sm" id="emailError"></span>
+                    </p>
+
+                    <p class="flex flex-col gap-2">
+                        <label for="message" class="font-bold">Message</label>
+                        <textarea id="message" rows="6"
+                            class="border-2 border-black rounded p-2 bg-transparent"></textarea>
+                        <span class="error text-red-600 text-sm" id="messageError"></span>
+                    </p>
+                    <button type="submit" class="bg-black text-white font-bold p-2 hover:bg-gray-800 transition">
+                        Send
+                    </button>
+                </fieldset>
+            </form>
+        </section>
+
+        <section id="resume">
+            <h2 class="text-5xl font-bold mb-4">Resume</h2>
+            <hr class="w-20 border-2 border-black mb-10">
+
+            <article class="mb-8">
+                <h2 class="text-2xl font-bold mb-2">Education</h2>
+                <p class="mt-4 text-base text-pretty text-gray-700 sm:text-lg/relaxed">North Metropolitan TAFE
+                    Certificate IV in Information Technology (Programming)
+
+                </p>
+                <p class="mt-4 text-base text-pretty text-gray-700 sm:text-lg/relaxed">
+                    Studying software development, web technologies, databases, and programming fundamentals. Gained
+                    practical experience through individual and team-based projects using modern development tools and
+                    frameworks.</p>
+            </article>
+
+            <article>
+                <h2 class="text-2xl font-bold mb-2">Skills</h2>
+                <ul class="list-disc pl-6">
+                    <li>HTML, CSS, JS</li>
+                    <li>C#</li>
+                    <li>Python</li>
+                    <li>SQL and Database Design</li>
+                    <li>Git/GitHub</li>
+                    <li>Responsive Web Design</li>
+                    <li>REST APIs</li>
+                    <li>Problem Solving</li>
+                    <li>Team Collaboration</li>
+                </ul>
+            </article>
+        </section>
+
+        <section id="about">
+            <h2 class="text-5xl font-bold mb-4">About</h2>
+            <hr class="w-20 border-2 border-black mb-10">
+            <article class="max-w-7xl mx-auto px-4 py-16 sm:px-6 sm:py-24 lg:px-8 lg:py-32 text-left">
+                <h3 class="text-5xl font-bold mb-8">My Story</h3>
+                <p class="mt-4 text-base text-pretty text-gray-700 sm:text-lg/relaxed">
+                    My name is Artem, and I am an Information Technology student at North Metropolitan TAFE. I have a
+                    strong
+                    interest in software development, web technologies, and problem-solving through programming.
+                    Throughout
+                    my studies, I have gained experience working with HTML, CSS, JavaScript, Python, C#, SQL, and modern
+                    development tools.
+                </p>
+                <p class="mt-4 text-base text-pretty text-gray-700 sm:text-lg/relaxed">
+                    I enjoy creating practical applications and websites that combine functionality with clean and
+                    user-friendly design. During my projects, I have worked with databases, APIs, version control
+                    systems,
+                    and responsive web development principles. I am constantly looking for opportunities to improve my
+                    technical skills and learn new technologies that can help me become a more effective developer.
+                </p>
+                <p class="mt-4 text-base text-pretty text-gray-700 sm:text-lg/relaxed">
+                    In addition to my studies, I enjoy working on personal projects that allow me to apply what I have
+                    learned in real-world scenarios. These projects help me strengthen my understanding of software
+                    architecture, user experience, and application development. I value attention to detail, continuous
+                    learning, and writing maintainable code.
+                </p>
+                <p class="mt-4 text-base text-pretty text-gray-700 sm:text-lg/relaxed">
+                    My goal is to build a successful career in the IT industry, where I can contribute to meaningful
+                    projects, continue developing my skills, and work alongside experienced professionals. I am
+                    motivated,
+                    reliable, and enjoy both independent work and collaboration within a team environment.
+                </p>
+            </article>
+        </section>
+
+        <section id="projects">
+            <h2 class="text-5xl font-bold mb-4">Projects</h2>
+            <hr class="w-20 border-2 border-black mb-10">
+            <article class="border border-black">
+                <img src="../assets/img/diagram.png" alt="Gym Assistant" class="w-full h-auto">
+                <h2 class="text-5xl font-bold p-6">Gym Assistant</h2>
+                <hr class="w-20 border-2 border-black ml-6 mb-10">
+                <section class="p-6">
+
+                    <h3 class="text-3xl mb-2">
+                        Your Personal Trainer!
+                    </h3>
+
+                    <p class="mb-6 text-gray-700">
+                        A workout companion designed to help users track exercises, monitor progress, and stay committed
+                        to
+                        their fitness journey.
+                    </p>
+
+                    <button type="button" class="bg-gray-100 text-black border border-gray-500
+               shadow shadow-gray-500/50
+               p-4 py-2
+               hover:shadow-none hover:text-gray-500
+               transition ease-in-out duration-500" onclick="window.location.href='#mywork'">
+                        View Project
+                    </button>
+
+                </section>
+            </article>
+
+            <article class="border border-black">
+                <img src="../assets/img/ip_lookup.png" alt="Gym Assistant" class="w-full h-auto">
+                <h2 class="text-5xl font-bold p-6">API</h2>
+                <hr class="w-20 border-2 border-black ml-6 mb-10">
+                <section class="p-6">
+
+                    <h3 class="text-3xl mb-2">
+                        API Playground
+                    </h3>
+
+                    <p class="mb-6 text-gray-700">
+                        This project demonstrates how to interact with external APIs using JavaScript. Users can select
+                        an
+                        API, submit a request, and view the returned data directly on the page.
+                    </p>
+
+                    <button type="button" class="bg-gray-100 text-black border border-gray-500
+               shadow shadow-gray-500/50
+               p-4 py-2
+               hover:shadow-none hover:text-gray-500
+               transition ease-in-out duration-500" onclick="window.location.href='#mywork2'">
+                        View Project
+                    </button>
+
+                </section>
+
+            </article>
         </section>
 
     </main>
