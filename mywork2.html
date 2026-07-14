@@ -5,33 +5,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
-    <link rel="stylesheet" href="../assets/css/site.css">
-    <link rel="stylesheet" href="../assets/css/font.css">
-    <link rel="icon" type="image/png" href="../assets/img/fш.png">
+    <link rel="stylesheet" href="../assets/css/modern-normalize.css">
+    <link rel="icon" type="image/png" href="../assets/img/fi.png">
 </head>
 
-<body class="min-h-screen flex flex-col">
-    <header class="sticky top-0 w-full flex flex-col justify-between p-6 md:flex-row gap-2 bg-black text-gray-200">
-        <a class="flex items-center mb-4 title-font md:mb-0 gap-2">
-            <h1 class="text-sm">Home</h1>
+<body>
+    <header>
+        <a>
+            <h1>Home</h1>
         </a>
-        <nav aria-label="Primary" class="flex text-base md:ml-auto">
-            <ul class="flex gap-4">
+        <nav aria-label="Primary">
+            <ul>
                 <li><a href="../index.html">Home</a></li>
-                <li><a href="../contact.html">Contact</a></li>
-                <li><a href="../about.html">About</a></li>
-                <li><a href="../resume.html">Resume</a></li>
-                <li><a href="../projects.html">Projects</a></li>
-                <li><a href="../mywork.html">Project</a></li>
             </ul>
         </nav>
     </header>
 
-    <main class="grow flex items-center justify-center">
-        <form class="w-full max-w-3xl mx-auto px-6 py-12 text-lg border-0 md:border-2 md:border-black">
-            <h2 class="text-6xl font-bold mb-4">API</h2>
-            <hr class="w-24 border-2 border-black mb-10">
-            <fieldset class="w-full border-2 border-black p-6 mb-6 flex flex-col justify-center items-center">
+    <main>
+        <form>
+            <h2>API</h2>
+            <hr>
+            <fieldset>
                 <legend>Pick an API</legend>
                 <h2>Pick from the following API`s</h2>
                 <p>
@@ -45,15 +39,14 @@
                 </p>
             </fieldset>
 
-            <fieldset class="w-full border-2 border-black p-6 mb-6 flex flex-col justify-center items-center">
+            <fieldset>
                 <legend>Enter your request</legend>
-                <input id="input" type="text" placeholder="" class="border-2 border-black p-2 mb-2 bg-transparent">
-                <button type="submit" id="loadBtn"
-                    class="bg-white text-black border-2 border-black p-1 m-2 transition">Get
-                    Response</button>
+                <input id="input" type="text" placeholder="">
+                <button type="submit" id="loadBtn">
+                    Get Response</button>
             </fieldset>
 
-            <fieldset class="w-full border-2 border-black p-6 flex flex-col justify-center items-center">
+            <fieldset>
                 <legend>API Response</legend>
                 <h2 class="mb-4">Hope you like the results!</h2>
                 <pre id="output"></pre>
@@ -62,30 +55,15 @@
 
     </main>
 
-    <footer
-        class="text-gray-400 bg-black body-font w-full flex flex-col items-start justify-between p-6 md:flex-row gap-2">
-        <a class="flex items-center mb-4 title-font  gap-2
-                  hover:text-white transition duration-500 ease-in-out">
-            <h1 class="text-sm">Portfolio</h1>
+    <footer>
+        <a>
+            <h1>Portfolio</h1>
         </a>
-        <p class="flex flex-wrap text-sm pl-6 ml-6
-                border-l border-gray-400 grow m-auto">
+        <p>
             © Copyright 2026 Artem Baranenko, all rights reserved.
         </p>
-        <ul class="flex flex-wrap text-sm pl-6 ml-6 border-l border-gray-400
-                md:mr-auto gap-2">
-            <li><a href="../index.html" class="border-b border-gray-400 hover:border-gray-200 hover:text-white
-                  transition duration-500 ease-in-out">Home</a></li>
-            <li><a href="../contact.html" class="border-b border-gray-400 hover:border-gray-200 hover:text-white
-                  transition duration-500 ease-in-out">Contact</a></li>
-            <li><a href="../about.html" class="border-b border-gray-400 hover:border-gray-200 hover:text-white
-                  transition duration-500 ease-in-out">About</a></li>
-            <li><a href="../resume.html" class="border-b border-gray-400 hover:border-gray-200 hover:text-white
-                  transition duration-500 ease-in-out">Resume</a></li>
-            <li><a href="../projects.html" class="border-b border-gray-400 hover:border-gray-200 hover:text-white
-                  transition duration-500 ease-in-out">Projects</a></li>
-            <li><a href="../mywork.html" class="border-b border-gray-400 hover:border-gray-200 hover:text-white
-                  transition duration-500 ease-in-out">Project</a></li>
+        <ul>
+            <li><a href="../index.html">Home</a></li>
         </ul>
     </footer>
     <script src="../assets/js/api.js"></script>

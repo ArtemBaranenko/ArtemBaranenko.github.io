@@ -5,38 +5,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
-    <link rel="stylesheet" href="../assets/css/site.css">
-    <link rel="stylesheet" href="../assets/css/font.css">
+    <link rel="stylesheet" href="../assets/css/modern-normalize.css">
 </head>
 
-<body class="min-h-screen flex flex-col">
-    <header class="sticky top-0 w-full flex flex-col justify-between p-6 md:flex-row gap-2 bg-black text-gray-200">
-        <a class="flex items-center mb-4 title-font md:mb-0 gap-2">
-            <h1 class="text-sm">Gym Assistant</h1>
+<body>
+    <header>
+        <a>
+            <h1>Gym Assistant</h1>
         </a>
-        <nav aria-label="Primary" class="flex text-base md:ml-auto">
-            <ul class="flex gap-4">
+        <nav aria-label="Primary">
+            <ul>
                 <li><a href="../index.html">Home</a></li>
-                <li><a href="../contact.html">Contact</a></li>
-                <li><a href="../about.html">About</a></li>
-                <li><a href="../resume.html">Resume</a></li>
-                <li><a href="../projects.html">Projects</a></li>
-                <li><a href="../mywork.html">Project</a></li>
             </ul>
         </nav>
     </header>
 
-    <main class="w-full max-w-7xl mx-auto px-12 py-12 gap-20 flex flex-col grow">
-        <h2 class="text-5xl font-bold mb-4"> Project Overview </h2>
-        <article class="flex flex-col md:flex-row items-center md:items-start justify-between gap-10">
-            <section class="max-w-xl">
-                <h3 class="text-3xl font-bold mb-4">
+    <main>
+        <h2> Project Overview </h2>
+        <article>
+            <section>
+                <h3>
                     Gym Assistant
                 </h3>
 
-                <hr class="w-20 border-2 border-black mb-6">
+                <hr>
 
-                <p class="text-2xl">
+                <p>
                     Workout tracking app built with .NET MAUI for iOS. The application helps users manage training
                     sessions,
                     track progress, log notes, and monitor body weight over time. It includes workout timers, set
@@ -45,45 +39,26 @@
                     consistent gym progress.
                 </p>
 
-                <button type="button" class="bg-gray-100 text-black border border-gray-500
-                    shadow shadow-gray-500/50
-                    p-4 py-2
-                    hover:shadow-none hover:text-gray-500
-                    transition ease-in-out duration-500 mt-4"
+                <button type="button"
                     onclick="window.open('https://github.com/ArtemBaranenko/C4Prog-WT-26S1-Portfolio-Artem_Baranenko', '_blank')">
                     GitHub repository link
                 </button>
             </section>
 
-            <img src="../assets/img/main_page.png" alt="Project picture" class="w-full h-auto object-contain">
+            <img src="../assets/img/main_page.png" alt="Project picture">
 
         </article>
     </main>
 
-    <footer
-        class="text-gray-400 bg-black body-font w-full flex flex-col items-start justify-between p-6 md:flex-row gap-2">
-        <a class="flex items-center mb-4 title-font  gap-2
-                  hover:text-white transition duration-500 ease-in-out">
-            <h1 class="text-sm">Portfolio</h1>
+    <footer>
+        <a>
+            <h1>Portfolio</h1>
         </a>
-        <p class="flex flex-wrap text-sm pl-6 ml-6
-                border-l border-gray-400 grow m-auto">
+        <p>
             © Copyright 2026 Artem Baranenko, all rights reserved.
         </p>
-        <ul class="flex flex-wrap text-sm pl-6 ml-6 border-l border-gray-400
-                md:mr-auto gap-2">
-            <li><a href="../index.html" class="border-b border-gray-400 hover:border-gray-200 hover:text-white
-                  transition duration-500 ease-in-out">Home</a></li>
-            <li><a href="../contact.html" class="border-b border-gray-400 hover:border-gray-200 hover:text-white
-                  transition duration-500 ease-in-out">Contact</a></li>
-            <li><a href="../about.html" class="border-b border-gray-400 hover:border-gray-200 hover:text-white
-                  transition duration-500 ease-in-out">About</a></li>
-            <li><a href="../resume.html" class="border-b border-gray-400 hover:border-gray-200 hover:text-white
-                  transition duration-500 ease-in-out">Resume</a></li>
-            <li><a href="../projects.html" class="border-b border-gray-400 hover:border-gray-200 hover:text-white
-                  transition duration-500 ease-in-out">Projects</a></li>
-            <li><a href="../mywork.html" class="border-b border-gray-400 hover:border-gray-200 hover:text-white
-                  transition duration-500 ease-in-out">Project</a></li>
+        <ul>
+            <li><a href="../index.html">Home</a></li>
         </ul>
     </footer>
 
