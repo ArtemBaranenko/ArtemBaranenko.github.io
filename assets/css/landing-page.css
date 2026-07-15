@@ -4,7 +4,7 @@ html {
 }
 
 body {
-  background: #f8f9fa;
+  background: #fff;
   justify-content: center;
   align-items: center;
   height: 100vh;
@@ -13,6 +13,7 @@ body {
 section{
     padding: 1em;
     border: 2px outset black;
+    margin: 0em, 10em, 0em, 10em;
 }
 
 a {
@@ -25,13 +26,18 @@ img{
     height:auto;
 }
 
+button{
+    border: 2px outset black;
+    background-color: #ffffff;
+}
+
 .site_header {
   display: flex;
   justify-content: space-between;
   align-items: center;
   position: sticky;
   top: 0;
-  background-color: rgb(219, 219, 219);
+  background-color: #000000;
 }
 
 .site_header h1 {
@@ -42,19 +48,62 @@ img{
 .site_header nav {
   display: none;
   margin-left: auto;
+  color: #fff;
 }
 
-.sidebar {
-  display: none;
+.site_header a {
+  color: #fff;
 }
 
 .site_footer {
   display: flex;
   align-items: center;
   flex-direction: column;
+  background-color: #000000;
+  color: #fff;
 }
 
 .site_footer nav ul {
   display: flex;
   gap: 1em;
+}
+
+.site_footer a {
+  color: #fff;
+}
+
+@media (min-width: 768px) {
+
+  .site_header nav {
+    display: block;
+  }
+
+  .site_header nav ul {
+    display: flex;
+    gap: 1em;
+    list-style: none;
+  }
+
+  .site_footer {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+  }
+  section{
+    margin: 0em, 10em, 0em, 10em;
+  }
+}
+
+@media (min-width: 1024px) {
+
+  .site_footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1em 1em 0em 0em;
+  }
+
+  section{
+    margin: 0em, 10em, 0em, 10em;
+  }
 }
