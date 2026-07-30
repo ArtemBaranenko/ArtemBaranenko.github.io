@@ -13,7 +13,7 @@
 <body>
     <header class="site_header">
         <a>
-            <h1>Home</h1>
+            <h1>Portfolio</h1>
         </a>
         <nav aria-label="Primary">
             <ul>
@@ -35,7 +35,8 @@
             </h2>
 
             <p>
-                IT student passionate about web development and software.
+                I'm a software developer focused on building thoughtful, reliable digital products. I enjoy turning
+                complex ideas into clear and practical experiences.
             </p>
 
             <button type="button" onclick="window.location.href='#projects'">
@@ -50,23 +51,27 @@
             <form id="contactForm">
                 <fieldset>
                     <legend>Fill out the form</legend>
-                    <p>
-                        <label for="name">Name</label>
-                        <input type="text" id="name">
-                        <span id="nameError"></span>
-                    </p>
+                    <div class="fieldsGroup">
+                        <div class="contactFieldset">
+                            <p>
+                                <label for="name">Name</label>
+                                <input type="text" id="name">
+                                <span id="nameError"></span>
+                            </p>
 
-                    <p>
-                        <label for="email">Email</label>
-                        <input type="text" id="email">
-                        <span id="emailError"></span>
-                    </p>
+                            <p>
+                                <label for="email">Email</label>
+                                <input type="text" id="email">
+                                <span id="emailError"></span>
+                            </p>
+                        </div>
+                        <p>
+                            <label for="message">Message</label>
+                            <textarea id="message" rows="6"></textarea>
+                            <span id="messageError"></span>
+                        </p>
+                    </div>
 
-                    <p>
-                        <label for="message">Message</label>
-                        <textarea id="message" rows="6"></textarea>
-                        <span id="messageError"></span>
-                    </p>
                     <button type="submit">
                         Send
                     </button>
@@ -75,11 +80,9 @@
         </section>
 
         <section id="resume">
-            <h2>Resume</h2>
-            <hr>
-
             <article>
                 <h2>Education</h2>
+                <hr>
                 <p>North Metropolitan TAFE
                     Certificate IV in Information Technology (Programming)
 
@@ -162,24 +165,6 @@
 
             </section>
 
-            <section id="card-2">
-                <img src="../assets/img/ip_lookup.png" alt="Gym Assistant">
-                <h2>API</h2>
-                <h3>
-                    API Playground
-                </h3>
-
-                <p>
-                    This project demonstrates how to interact with external APIs using JavaScript. Users can select
-                    an
-                    API, submit a request, and view the returned data directly on the page.
-                </p>
-
-                <button type="button" onclick="window.location.href='#mywork2'">
-                    View Project
-                </button>
-
-            </section>
 
         </section>
 

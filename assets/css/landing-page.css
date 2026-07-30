@@ -12,7 +12,7 @@ body {
 
 section{
     padding: 1em;
-    border: 2px outset black;
+    border: 2px outset white;
     margin: 0em, 10em, 0em, 10em;
 }
 
@@ -29,6 +29,20 @@ img{
 button{
     border: 2px outset black;
     background-color: #ffffff;
+}
+
+fieldset{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.fieldsGroup{
+    display: flex;
+}
+
+.fieldsGroup p{
+    margin: 1em;
 }
 
 .site_header {
@@ -73,7 +87,6 @@ button{
 }
 
 @media (min-width: 768px) {
-
     .site_header nav {
         display: block;
     }
@@ -98,7 +111,8 @@ button{
 @media (min-width: 1024px) {
 
     .site_header {
-
+        padding-left: 2em;
+        padding-right: 2em;
     }
 
     section{
@@ -109,6 +123,7 @@ button{
         display: flex;
         justify-content: space-between;
         align-items: center;
-        margin: 1em 1em 0em 0em;
+        padding-left: 2em;
+        padding-right: 2em;
   }
 }
