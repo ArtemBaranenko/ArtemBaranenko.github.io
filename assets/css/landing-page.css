@@ -11,9 +11,8 @@ body {
 }
 
 section{
-    padding: 1em;
+    padding: 2em;
     border: 2px outset white;
-    margin: 0em, 10em, 0em, 10em;
 }
 
 a {
@@ -35,6 +34,8 @@ fieldset{
     display: flex;
     flex-direction: column;
     align-items: center;
+    border: 0em;
+    
 }
 
 .fieldsGroup{
@@ -97,14 +98,20 @@ fieldset{
         list-style: none;
     }
 
+    .site_footer nav ul {
+        display: flex;
+        gap: 1em;
+        list-style: none;
+    }
+
     .site_footer {
         display: flex;
         justify-content: space-between;
         flex-direction: row;
     }
 
-    section{
-        margin: 0em, 10em, 0em, 10em;
+    .home{
+        padding: 3em 1em 3em 1em;
     }
 }
 
@@ -115,8 +122,9 @@ fieldset{
         padding-right: 2em;
     }
 
-    section{
-        margin: 0em, 10em, 0em, 10em;
+
+    .home_section{
+        padding: 5em 2em 5em 2em;
     }
 
     .site_footer {
@@ -125,5 +133,5 @@ fieldset{
         align-items: center;
         padding-left: 2em;
         padding-right: 2em;
-  }
+    }
 }
